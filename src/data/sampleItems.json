@@ -1,0 +1,279 @@
+[
+  {
+    "id": "img-nhs-5yr",
+    "type": "article",
+    "title": "Integration of International Medical Graduates into the NHS: A Five-Year Cohort Study",
+    "abstract": "Cohort analysis of IMG onboarding outcomes across 37 NHS Trusts, examining retention rates, clinical performance metrics, and integration challenges. This study provides evidence-based recommendations for improving IMG workforce sustainability in the UK healthcare system.",
+    "slug": "img-integration-nhs-5yr-cohort",
+    "doi": "10.5678/ndglabs.2025.001",
+    "version": "v1.0",
+    "publishedAt": "2025-10-15",
+    "authors": [
+      {
+        "name": "Dr Sarah Johnson",
+        "orcid": "0000-0002-1825-0097",
+        "affiliation": "NHS England",
+        "role": "Conceptualization, Writing - original draft"
+      },
+      {
+        "name": "Prof Michael Thompson",
+        "orcid": "0000-0003-2947-5821",
+        "affiliation": "UCL",
+        "role": "Methodology, Data analysis"
+      }
+    ],
+    "affiliations": ["NHS England", "UCL"],
+    "domains": ["workforce"],
+    "specialties": ["medicine"],
+    "geography": ["UK"],
+    "method": "cohort; STROBE-aligned",
+    "peerStatus": "peer-reviewed",
+    "openAccess": true,
+    "openData": true,
+    "dataStatement": "Dataset and code available on Zenodo (CC BY 4.0): https://zenodo.org/record/12345",
+    "pdfUrl": "/pdf/img-integration-5yr.pdf",
+    "htmlUrl": "/articles/img-integration-nhs-5yr-cohort",
+    "datasetUrl": "https://zenodo.org/record/12345",
+    "ethics": "REC approval: 21/NE/0123. All participants provided informed consent.",
+    "funding": "Funded by NHS England Workforce Innovation Grant.",
+    "conflicts": "The authors declare no conflicts of interest.",
+      "citation": {
+        "harvard": "Johnson S, Thompson M (2025) Integration of IMGs into the NHS: A Five-Year Cohort Study. NextDoc Labs. doi:10.5678/ndglabs.2025.001",
+        "vancouver": "Johnson S, Thompson M. Integration of IMGs into the NHS: A Five-Year Cohort Study. NextDoc Labs. 2025; v1.0. doi:10.5678/ndglabs.2025.001",
+        "bibtex": "@article{ndg-001,\n  title={Integration of International Medical Graduates into the NHS: A Five-Year Cohort Study},\n  author={Johnson, S. and Thompson, M.},\n  year={2025},\n  journal={NextDoc Labs},\n  doi={10.5678/ndglabs.2025.001}\n}"
+      },
+    "metrics": {
+      "views": 5287,
+      "downloads": 2847,
+      "citations": 4
+    },
+    "keywords": ["IMG", "NHS", "workforce", "integration", "retention"],
+    "changeLog": [
+      {
+        "version": "v1.0",
+        "date": "2025-10-15",
+        "notes": "Initial release"
+      }
+    ]
+  },
+  {
+    "id": "plab-ai-framework",
+    "type": "white-paper",
+    "title": "AI-Assisted PLAB Preparation: A Governance-First Implementation Framework",
+    "abstract": "Practical, NICE-aligned AI blueprint for assessment and feedback loops in medical examination preparation. This framework addresses ethical considerations, data governance, and clinical validation requirements for AI-powered medical education tools.",
+    "slug": "ai-plab-governance-framework",
+    "version": "v1.1",
+    "publishedAt": "2025-09-30",
+    "updatedAt": "2025-10-05",
+    "authors": [
+      {
+        "name": "Dr Roshan Khanderi",
+        "orcid": "0000-0001-9876-5432",
+        "affiliation": "NextDoc Labs",
+        "role": "Conceptualization, Writing - original draft"
+      }
+    ],
+    "affiliations": ["NextDoc Labs"],
+    "domains": ["medical-education", "responsible-ai"],
+    "specialties": ["medicine"],
+    "geography": ["UK", "India"],
+    "method": "framework; SQUIRE-aligned",
+    "peerStatus": "under-review",
+    "openAccess": true,
+    "openData": false,
+    "pdfUrl": "/pdf/ai-plab-framework-v1.1.pdf",
+    "htmlUrl": "/white-papers/ai-plab-governance-framework",
+    "ethics": "No human subjects research; framework development study.",
+      "citation": {
+        "harvard": "Khanderi R (2025) AI-Assisted PLAB Preparation: A Governance-First Framework. NextDoc Labs. v1.1.",
+        "vancouver": "Khanderi R. AI-Assisted PLAB Preparation: Governance-First Framework. NextDoc Labs. 2025; v1.1."
+      },
+    "metrics": {
+      "views": 3920,
+      "downloads": 1923
+    },
+    "keywords": ["AI", "PLAB", "medical education", "governance", "ethics"],
+    "changeLog": [
+      {
+        "version": "v1.0",
+        "date": "2025-09-30",
+        "notes": "Initial release"
+      },
+      {
+        "version": "v1.1",
+        "date": "2025-10-05",
+        "notes": "Added NICE alignment section and updated governance checklist"
+      }
+    ]
+  },
+  {
+    "id": "mentorship-protocol",
+    "type": "protocol",
+    "title": "Structured Mentorship Protocol for International Medical Graduates: A Registered Report",
+    "abstract": "Pre-registered study protocol examining the efficacy of structured mentorship interventions for IMGs across 12 NHS Trusts. This protocol details randomization procedures, outcome measures, and statistical analysis plans prior to data collection.",
+    "slug": "img-mentorship-protocol-registered",
+    "doi": "10.5678/ndglabs.2025.002",
+    "version": "v1.0",
+    "publishedAt": "2025-10-01",
+    "authors": [
+      {
+        "name": "Dr Priya Sharma",
+        "orcid": "0000-0004-3322-1198",
+        "affiliation": "King's College London",
+        "role": "Conceptualization, Protocol design"
+      },
+      {
+        "name": "Prof James Mitchell",
+        "affiliation": "Imperial College London",
+        "role": "Methodology, Supervision"
+      }
+    ],
+    "affiliations": ["King's College London", "Imperial College London"],
+    "domains": ["workforce", "medical-education"],
+    "specialties": ["medicine", "surgery"],
+    "geography": ["UK"],
+    "method": "RCT; CONSORT-aligned protocol",
+    "peerStatus": "peer-reviewed",
+    "openAccess": true,
+    "openData": false,
+    "dataStatement": "Data collection in progress. Dataset will be published upon study completion.",
+    "pdfUrl": "/pdf/mentorship-protocol.pdf",
+    "htmlUrl": "/protocols/img-mentorship-protocol-registered",
+    "ethics": "REC approval: 23/LO/0456. Study registered at ClinicalTrials.gov: NCT05123456.",
+    "funding": "Health Education England grant.",
+      "citation": {
+        "harvard": "Sharma P, Mitchell J (2025) Structured Mentorship Protocol for IMGs: A Registered Report. NextDoc Labs. doi:10.5678/ndglabs.2025.002",
+        "vancouver": "Sharma P, Mitchell J. Structured Mentorship Protocol for IMGs: A Registered Report. NextDoc Labs. 2025; v1.0. doi:10.5678/ndglabs.2025.002"
+      },
+    "metrics": {
+      "views": 1876,
+      "downloads": 943
+    },
+    "keywords": ["mentorship", "IMG", "protocol", "registered report", "RCT"]
+  },
+  {
+    "id": "cultural-competency-review",
+    "type": "review",
+    "title": "Cultural Competency Training in UK Healthcare: A Systematic Review",
+    "abstract": "PRISMA-compliant systematic review synthesizing evidence from 47 studies on cultural competency interventions for healthcare professionals in the UK. Includes meta-analysis of patient satisfaction outcomes and recommendations for curriculum integration.",
+    "slug": "cultural-competency-systematic-review",
+    "doi": "10.5678/ndglabs.2025.003",
+    "version": "v1.0",
+    "publishedAt": "2025-09-15",
+    "authors": [
+      {
+        "name": "Dr Aisha Rahman",
+        "orcid": "0000-0005-7788-9901",
+        "affiliation": "University of Manchester",
+        "role": "Conceptualization, Data extraction, Writing"
+      },
+      {
+        "name": "Dr Thomas Hughes",
+        "affiliation": "Cardiff University",
+        "role": "Data extraction, Statistical analysis"
+      }
+    ],
+    "affiliations": ["University of Manchester", "Cardiff University"],
+    "domains": ["workforce", "medical-education"],
+    "specialties": ["medicine", "nursing"],
+    "geography": ["UK"],
+    "method": "systematic review; PRISMA-aligned",
+    "peerStatus": "peer-reviewed",
+    "openAccess": true,
+    "openData": true,
+    "dataStatement": "Search strategy, extraction forms, and analysis code: https://osf.io/abc123/",
+    "pdfUrl": "/pdf/cultural-competency-review.pdf",
+    "htmlUrl": "/reviews/cultural-competency-systematic-review",
+    "datasetUrl": "https://osf.io/abc123/",
+    "ethics": "Secondary data analysis; no ethical approval required.",
+      "citation": {
+        "harvard": "Rahman A, Hughes T (2025) Cultural Competency Training in UK Healthcare: A Systematic Review. NextDoc Labs. doi:10.5678/ndglabs.2025.003",
+        "vancouver": "Rahman A, Hughes T. Cultural Competency Training in UK Healthcare: A Systematic Review. NextDoc Labs. 2025; v1.0. doi:10.5678/ndglabs.2025.003"
+      },
+    "metrics": {
+      "views": 4521,
+      "downloads": 2103,
+      "citations": 7
+    },
+    "keywords": ["cultural competency", "healthcare", "systematic review", "PRISMA", "training"]
+  },
+  {
+    "id": "nhs-workforce-policy",
+    "type": "policy",
+    "title": "Policy Brief: Sustainable IMG Workforce Planning for NHS Trusts",
+    "abstract": "Evidence-based policy recommendations for NHS workforce leaders on international medical graduate recruitment, retention, and integration strategies. Includes implementation toolkit and cost-benefit analysis.",
+    "slug": "nhs-img-workforce-policy-brief",
+    "version": "v1.0",
+    "publishedAt": "2025-10-10",
+    "authors": [
+      {
+        "name": "Dr David Foster",
+        "affiliation": "NHS Employers",
+        "role": "Policy analysis, Writing"
+      },
+      {
+        "name": "Dr Leila Osman",
+        "affiliation": "Health Foundation",
+        "role": "Economic analysis"
+      }
+    ],
+    "affiliations": ["NHS Employers", "Health Foundation"],
+    "domains": ["workforce"],
+    "specialties": ["medicine", "surgery"],
+    "geography": ["UK"],
+    "method": "policy analysis; mixed methods",
+    "peerStatus": "preprint",
+    "openAccess": true,
+    "openData": false,
+    "pdfUrl": "/pdf/workforce-policy-brief.pdf",
+    "htmlUrl": "/policy/nhs-img-workforce-policy-brief",
+      "citation": {
+        "harvard": "Foster D, Osman L (2025) Policy Brief: Sustainable IMG Workforce Planning for NHS Trusts. NextDoc Labs. v1.0.",
+        "vancouver": "Foster D, Osman L. Policy Brief: Sustainable IMG Workforce Planning. NextDoc Labs. 2025; v1.0."
+      },
+    "metrics": {
+      "views": 2341,
+      "downloads": 1456
+    },
+    "keywords": ["workforce", "policy", "NHS", "IMG", "planning"]
+  },
+  {
+    "id": "osce-dataset",
+    "type": "dataset",
+    "title": "OSCE Performance Dataset: International Medical Graduates (2020-2024)",
+    "abstract": "De-identified dataset containing OSCE scores, demographics, and training characteristics for 1,247 IMGs across 8 UK medical schools. Includes codebook, analysis scripts (R & Python), and data dictionary.",
+    "slug": "osce-img-dataset-2020-2024",
+    "doi": "10.5281/zenodo.7654321",
+    "version": "v1.0",
+    "publishedAt": "2025-09-20",
+    "authors": [
+      {
+        "name": "Dr Emma Clarke",
+        "orcid": "0000-0006-4433-2211",
+        "affiliation": "University of Edinburgh",
+        "role": "Data curation, Documentation"
+      }
+    ],
+    "affiliations": ["University of Edinburgh"],
+    "domains": ["medical-education"],
+    "specialties": ["medicine"],
+    "geography": ["UK"],
+    "method": "observational; de-identified cohort data",
+    "peerStatus": "peer-reviewed",
+    "openAccess": true,
+    "openData": true,
+    "dataStatement": "Full dataset and documentation: https://zenodo.org/record/7654321 (CC BY 4.0)",
+    "datasetUrl": "https://zenodo.org/record/7654321",
+    "htmlUrl": "/datasets/osce-img-dataset-2020-2024",
+    "ethics": "REC approval: 20/SC/0234. Data fully anonymized per ICO guidelines.",
+    "citation": {
+      "harvard": "Clarke E (2025) OSCE Performance Dataset: International Medical Graduates (2020-2024). Zenodo. doi:10.5281/zenodo.7654321",
+      "vancouver": "Clarke E. OSCE Performance Dataset: International Medical Graduates (2020-2024). Zenodo. 2025. doi:10.5281/zenodo.7654321"
+    },
+    "metrics": {
+      "views": 1654,
+      "downloads": 876
+    },
+    "keywords": ["OSCE", "IMG", "dataset", "medical education", "assessment"]
+  }
+]

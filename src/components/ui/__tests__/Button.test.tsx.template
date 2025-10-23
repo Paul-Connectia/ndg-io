@@ -1,0 +1,25 @@
+// Template test file - Install vitest and @testing-library packages to use
+// npm install -D vitest @testing-library/react @testing-library/jest-dom @testing-library/user-event jsdom @vitest/ui
+
+import { describe, it, expect } from 'vitest'
+import { render, screen } from '@testing-library/react'
+import { Button } from '@/components/ui/button'
+
+describe('Button', () => {
+  it('renders correctly', () => {
+    render(<Button>Click me</Button>)
+    expect(screen.getByText('Click me')).toBeInTheDocument()
+  })
+
+  it('applies variant styles', () => {
+    render(<Button variant="outline">Outline</Button>)
+    const button = screen.getByText('Outline')
+    expect(button).toHaveClass('border')
+  })
+
+  it('applies size prop', () => {
+    render(<Button size="lg">Large</Button>)
+    const button = screen.getByText('Large')
+    expect(button).toHaveClass('h-11')
+  })
+})

@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* NextDoc Labs Design System - Fortune-500 Clean */
+
+@layer base {
+  :root {
+    /* Core system colors - NHS deep blue branding */
+    --background: 0 0% 100%;
+    --foreground: 222 84% 5%; /* #0F172A ink */
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 5%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 5%;
+    
+    /* Primary - NHS deep blue (70% of design) */
+    --primary: 211 100% 27%; /* #003087 */
+    --primary-light: 211 100% 40%;
+    --primary-foreground: 0 0% 98%;
+    
+    /* Secondary - Bright Cyan (20% of design - innovation bridge) */
+    --secondary: 187 85% 43%; /* #06B6D4 Bright Cyan */
+    --secondary-muted: 187 70% 60%;
+    --secondary-foreground: 0 0% 98%;
+    
+    /* Muted - Neutral grays */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 25% 47%; /* #64748B */
+    
+    /* Accent - Academic Gold (≤5% of design) */
+    --accent: 43 96% 56%; /* #F5C842 Academic Gold */
+    --accent-muted: 43 90% 70%;
+    --accent-foreground: 222 84% 5%;
+    
+    /* System colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 211 100% 27%;
+    --radius: 0.5rem;
+    
+    /* Additional tokens */
+    --cyan: 187 85% 43%; /* #06B6D4 */
+    --cyan-muted: 187 70% 60%;
+    --gold: 43 96% 56%; /* #F5C842 Academic Gold */
+    --gold-muted: 43 90% 70%;
+    
+    /* Slate scale for text */
+    --slate-50: 210 40% 98%;
+    --slate-700: 215 25% 27%;
+    --slate-900: 222 47% 11%;
+
+    /* Research Platform Gradients - Blue to Cyan */
+    --gradient-hero: linear-gradient(135deg, hsl(211 100% 27%), hsl(187 85% 43%));
+    --gradient-research: linear-gradient(45deg, hsl(211 100% 27% / 0.03), hsl(187 85% 43% / 0.1));
+    --gradient-innovation: linear-gradient(135deg, hsl(187 85% 43%), hsl(211 100% 27%));
+    --gradient-labs: linear-gradient(180deg, hsl(0 0% 100%), hsl(187 70% 60% / 0.05));
+
+    /* Professional shadows */
+    --shadow-card: 0 1px 3px hsl(215 28% 17% / 0.12), 0 1px 2px hsl(215 28% 17% / 0.24);
+    --shadow-hover: 0 4px 6px hsl(215 28% 17% / 0.07), 0 2px 4px hsl(215 28% 17% / 0.06);
+    --shadow-focus: 0 0 0 3px hsl(211 100% 27% / 0.1);
+    --shadow-lg: 0 10px 15px hsl(215 28% 17% / 0.1), 0 4px 6px hsl(215 28% 17% / 0.05);
+    --shadow-xl: 0 20px 25px hsl(215 28% 17% / 0.1), 0 8px 10px hsl(215 28% 17% / 0.04);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Text balance for better typography */
+  .text-balance {
+    text-wrap: balance;
+  }
+}
