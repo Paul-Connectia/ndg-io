@@ -26,7 +26,9 @@ import ReviewsPage from "./pages/ReviewsPage";
 import PolicyPage from "./pages/PolicyPage";
 import DatasetsPage from "./pages/DatasetsPage";
 import PoliciesHub from "./pages/PoliciesHub";
-import EditorialBoard from "./pages/EditorialBoard";
+import ConferencePapersPage from "./pages/ConferencePapersPage";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
 
 // Create QueryClient instance outside component to prevent recreation on re-renders
 const queryClient = new QueryClient({
@@ -67,8 +69,10 @@ const App = () => {
               <Route path="/reviews" element={<ReviewsPage />} />
               <Route path="/policy" element={<PolicyPage />} />
               <Route path="/datasets" element={<DatasetsPage />} />
+              <Route path="/conference-papers" element={<ConferencePapersPage />} />
               <Route path="/policies" element={<PoliciesHub />} />
-              <Route path="/board" element={<EditorialBoard />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/privacy" element={<Privacy />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>

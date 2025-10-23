@@ -8,14 +8,14 @@ import { TrendingUp, Users, Clock, Target, CheckCircle, ArrowRight } from "lucid
 const Cases = () => {
   const caseStudies = [
     {
-      title: "NHS Shortlist Uplift for IMG Cohort",
+      title: "NHS Shortlist Uplift for International Cohort",
       metric: "+32%",
-      description: "Interview invites increase for International Medical Graduates",
+      description: "Interview invites increase for international healthcare professionals",
       period: "6-month pilot study",
-      participants: "847 IMG applicants",
+      participants: "847 international healthcare professionals",
       methodology: "Randomized controlled trial with CV Booster™ intervention",
       details: [
-        "Baseline shortlist rate: 23% for IMG applicants",
+        "Baseline shortlist rate: 23% for international applicants",
         "Post-intervention rate: 55% with CV Booster™",
         "Control group maintained at 24% (no significant change)",
         "Statistically significant improvement (p < 0.001)"
@@ -76,7 +76,7 @@ const Cases = () => {
     {
       quote: "CV Booster™ completely transformed my application success rate. I went from getting no responses to securing multiple interview invitations.",
       author: "Dr. Priya Sharma",
-      role: "IMG, now Registrar at NHS Trust",
+      role: "International healthcare professional, now Registrar at NHS Trust",
       country: "UK"
     },
     {

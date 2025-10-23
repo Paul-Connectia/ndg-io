@@ -15,17 +15,31 @@ interface ItemCardProps {
 
 const ItemCard = ({ item }: ItemCardProps) => {
   const typeLabels: Record<string, string> = {
-    'article': 'Article',
+    'research-article': 'Research Article',
+    'systematic-review': 'Systematic Review',
     'white-paper': 'White Paper',
     'protocol': 'Protocol',
-    'review': 'Review',
-    'policy': 'Policy Brief',
+    'conference-paper': 'Conference Paper',
     'dataset': 'Dataset'
   };
 
   const getItemUrl = () => {
-    const basePath = item.type === 'white-paper' ? 'white-papers' : `${item.type}s`;
-    return `/${basePath}/${item.slug}`;
+    switch (item.type) {
+      case 'research-article':
+        return `/articles/${item.slug}`;
+      case 'systematic-review':
+        return `/reviews/${item.slug}`;
+      case 'white-paper':
+        return `/white-papers/${item.slug}`;
+      case 'protocol':
+        return `/protocols/${item.slug}`;
+      case 'conference-paper':
+        return `/conference-papers/${item.slug}`;
+      case 'dataset':
+        return `/datasets/${item.slug}`;
+      default:
+        return `/${item.slug}`;
+    }
   };
 
   return (

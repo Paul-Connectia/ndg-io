@@ -29,12 +29,12 @@ const SmartQBank = () => {
   return (
     <Layout 
       title="SmartQBank™ — 40,000+ Adaptive MCQs | NextDoc Labs"
-      description="Master medical MCQs with our adaptive AI engine. Focus 50™ daily drills, real-time rank predictor, and personalized analytics for NEET PG success."
+      description="Master medical MCQs with our adaptive AI engine. Focus 50™ daily drills, real-time rank predictor, and personalised analytics for NEET PG success."
       canonical="/products/smartqbank"
     >
       <Hero 
         title="SmartQBank™ — 40,000+ adaptive MCQs"
-        subtitle="Our adaptive engine learns your weak spots and creates personalized daily drills. Track your progress with real-time rank prediction and compete with peers nationwide."
+        subtitle="Our adaptive engine learns your weak spots and creates personalised daily drills. Track your progress with real-time rank prediction and compete with peers nationwide."
       />
 
       <section className="py-20">
@@ -54,8 +54,8 @@ const SmartQBank = () => {
             <div className="bg-gradient-card rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold mb-4">How Focus50™ Works</h3>
               <p className="text-muted-foreground">
-                Our AI analyzes your performance across all subjects and identifies your top 50 weak areas. 
-                Every day, you get a personalized drill targeting these specific gaps, ensuring efficient 
+                Our AI analyses your performance across all subjects and identifies your top 50 weak areas. 
+                Every day, you get a personalised drill targeting these specific gaps, ensuring efficient 
                 and focused preparation.
               </p>
             </div>
@@ -117,7 +117,7 @@ const SmartQBank = () => {
               <CardDescription className="text-base">
                 <strong>No training on your private data without opt-in.</strong> We're UK GDPR & India DPDP aligned. 
                 Your study patterns and performance data remain private and are used only to improve your 
-                personalized learning experience.
+                personalised learning experience.
               </CardDescription>
             </CardContent>
           </Card>

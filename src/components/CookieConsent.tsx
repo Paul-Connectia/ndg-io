@@ -23,6 +23,18 @@ const CookieConsent = () => {
     }
   }, []);
 
+  useEffect(() => {
+    const handleManageCookies = () => {
+      setShowManager(true);
+    };
+
+    window.addEventListener('manage-cookies', handleManageCookies);
+    
+    return () => {
+      window.removeEventListener('manage-cookies', handleManageCookies);
+    };
+  }, []);
+
   const loadAnalytics = () => {
     const GA_ID = import.meta.env.VITE_GA_ID;
     const META_PIXEL_ID = import.meta.env.VITE_META_PIXEL_ID;
@@ -141,7 +153,7 @@ const CookieConsent = () => {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="flex-1">
             <p className="text-sm text-muted-foreground">
-              We use cookies to enhance your experience, analyze site traffic, and for marketing purposes. 
+              We use cookies to enhance your experience, analyse site traffic, and for marketing purposes. 
               By clicking "Accept All", you consent to our use of cookies.
             </p>
           </div>

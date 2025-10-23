@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 import { BookOpen, Shield, Users, Award, CheckCircle2, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Research = () => {
   const standards = [
@@ -26,7 +27,7 @@ const Research = () => {
   const focusAreas = [
     {
       title: "NHS Workforce Integration",
-      description: "Examining policies, practices, and outcomes for international medical graduate integration into the NHS workforce.",
+      description: "Examining policies, practices, and outcomes for international healthcare professional integration into the NHS workforce.",
       icon: Users
     },
     {
@@ -273,9 +274,9 @@ const Research = () => {
                   12+ active researchers across medicine, AI, and health policy
                 </p>
                 <Button variant="outline" asChild>
-                  <a href="/contact">
+                  <Link to="/contact">
                     Contact Team
-                  </a>
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -290,9 +291,9 @@ const Research = () => {
                   Collaborating with NHS Trusts and medical education institutions
                 </p>
                 <Button variant="outline" asChild>
-                  <a href="/collaborate">
+                  <Link to="/collaborate">
                     Partnership Inquiries
-                  </a>
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -322,9 +323,9 @@ const Research = () => {
                 </a>
               </Button>
               <Button size="lg" variant="outline-on-dark" asChild>
-                <a href="/publications">
+                <Link to="/publications">
                   View Publications
-                </a>
+                </Link>
               </Button>
             </div>
           </motion.div>

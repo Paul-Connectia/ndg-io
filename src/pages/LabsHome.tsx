@@ -39,14 +39,14 @@ const LabsHome = () => {
     {
       icon: Award,
       title: 'Career Pathways',
-      description: 'Mapping optimal career progression routes for international medical graduates'
+      description: 'Mapping optimal career progression routes for healthcare professionals'
     }
   ];
 
   return (
     <Layout 
       title="NextDoc Labs - Evidence-Based Medical Research & White Papers"
-      description="Evidence-led white papers and practical frameworks on NHS workforce, medical education, and health & social care. The research arm of NextDoc Global."
+      description="Practical evidence for NHS workforce, medical education, and health policy. COPE-compliant white papers and policy reviews from NextDoc Labs."
     >
       {/* Hero Section */}
       <section className="py-24 lg:py-32 bg-gradient-hero text-white overflow-hidden">
@@ -61,10 +61,10 @@ const LabsHome = () => {
               NextDoc Labs
             </h1>
             <p className="text-xl lg:text-2xl mb-4 leading-relaxed opacity-90">
-              Evidence-led white papers and practical frameworks on NHS workforce, medical education, and health & social care.
+              Practical evidence for NHS workforce, medical education, and health policy. White papers. Policy reviews. Real-world impact.
             </p>
-            <p className="text-lg mb-8 opacity-80 italic">
-              The research arm of NextDoc Global.
+            <p className="text-lg mb-8 opacity-80">
+              The research arm of NextDoc Global. COPE-compliant research you can cite, frameworks you can use.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="default" className="bg-white text-primary hover:bg-white/90 min-h-[44px]" asChild>
@@ -96,12 +96,29 @@ const LabsHome = () => {
                 <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6 text-center">
                   What is NextDoc Labs?
                 </h2>
-                <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
-                  <p>
-                    NextDoc Labs publishes white papers, working papers, and methods notes focused on NHS workforce integration, IMG pathways, medical education, and responsible AI. We follow COPE/ICMJE guidance and EQUATOR reporting standards, aiming for BMJ-level rigor with service-design practicality.
+                <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+                  <p className="text-2xl font-semibold text-foreground">
+                    We bridge the gap between research and practice.
                   </p>
-                  <p className="font-semibold text-foreground">
-                    <strong>Coming soon:</strong> author submissions, peer review, and a reviewer registry.
+                  <p>
+                    NextDoc Labs publishes white papers, policy reviews, and protocols that NHS clinicians, medical educators, and health leaders can actually use.
+                  </p>
+                  <p>
+                    Every publication follows COPE/ICMJE standards and EQUATOR reporting guidelines—so you can cite our work with confidence, and apply our frameworks with clarity.
+                  </p>
+                  
+                  <div className="bg-slate-50 p-6 rounded-lg border-l-4 border-cyan">
+                    <p className="font-semibold text-foreground mb-3">Focus areas:</p>
+                    <ul className="space-y-2 text-base">
+                      <li>• NHS workforce integration</li>
+                      <li>• Medical education innovation</li>
+                      <li>• Health & social care policy</li>
+                      <li>• Responsible AI in healthcare</li>
+                    </ul>
+                  </div>
+                  
+                  <p className="font-semibold text-foreground pt-2">
+                    Coming soon: author submissions, open peer review, and a reviewer registry.
                   </p>
                 </div>
               </CardContent>
@@ -204,8 +221,11 @@ const LabsHome = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <p className="text-sm text-muted-foreground max-w-4xl mx-auto">
-              Our work aligns with NHS guidance, NICE, BNF, ICMJE, COPE, and EQUATOR (CONSORT, STROBE, PRISMA, SQUIRE).
+            <p className="text-base text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              Every publication is reviewed for <strong className="text-foreground">COPE compliance</strong>, 
+              cited with <strong className="text-foreground">ICMJE standards</strong>, and structured using 
+              <strong className="text-foreground"> EQUATOR guidelines</strong> (CONSORT, STROBE, PRISMA). 
+              We reference NHS guidance, NICE, and BNF—so our frameworks integrate seamlessly into UK practice.
             </p>
           </motion.div>
         </div>

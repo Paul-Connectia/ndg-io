@@ -14,7 +14,7 @@ const FormCollaborate = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    organization: '',
+    organisation: '',
     role: '',
     message: '',
     collaborationType: [] as string[]
@@ -44,7 +44,7 @@ const FormCollaborate = () => {
       setFormData({
         name: '',
         email: '',
-        organization: '',
+        organisation: '',
         role: '',
         message: '',
         collaborationType: []
@@ -60,7 +60,7 @@ const FormCollaborate = () => {
         setFormData({
           name: '',
           email: '',
-          organization: '',
+          organisation: '',
           role: '',
           message: '',
           collaborationType: []
@@ -127,11 +127,11 @@ const FormCollaborate = () => {
 
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="organization">Organization</Label>
+              <Label htmlFor="organisation">Organisation</Label>
               <Input
-                id="organization"
-                value={formData.organization}
-                onChange={(e) => setFormData(prev => ({ ...prev, organization: e.target.value }))}
+                id="organisation"
+                value={formData.organisation}
+                onChange={(e) => setFormData(prev => ({ ...prev, organisation: e.target.value }))}
               />
             </div>
             <div className="space-y-2">

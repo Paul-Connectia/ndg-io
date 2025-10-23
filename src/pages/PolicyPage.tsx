@@ -6,10 +6,10 @@ import { ContentType, Item } from "@/types/scholarly";
 import sampleItemsData from "@/data/sampleItems.json";
 
 const PolicyPage = () => {
-  const [activeType, setActiveType] = useState<ContentType | 'all'>('policy');
+  const [activeType, setActiveType] = useState<ContentType | 'all'>('white-paper');
   const sampleItems = sampleItemsData as Item[];
 
-  const filteredItems = sampleItems.filter(item => item.type === 'policy');
+  const filteredItems = sampleItems.filter(item => item.type === 'white-paper' && item.subtype === 'policy-brief');
 
   return (
     <Layout
@@ -22,10 +22,10 @@ const PolicyPage = () => {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl">
             <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-              Policy & Governance Briefs
+              Policy Analysis & Briefs
             </h1>
             <p className="text-xl opacity-90">
-              Evidence-based policy recommendations and service-design briefs for NHS workforce leaders, medical directors, and education governance teams. Practical guidance you can implement tomorrow.
+              Evidence-informed policy recommendations and framework analyses for NHS workforce and healthcare governance.
             </p>
           </div>
         </div>

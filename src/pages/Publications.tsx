@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Download, Calendar, Users, Filter } from 'lucide-react';
 import Layout from '@/components/Layout';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 interface Publication {
   id: string;
@@ -21,13 +22,13 @@ const Publications = () => {
 
   const publications: Publication[] = [
     {
-      id: 'img-integration-nhs',
-      title: 'International Medical Graduate Integration in NHS: A 5-Year Analysis',
+      id: 'workforce-integration-nhs',
+      title: 'International Healthcare Professional Integration in NHS: A 5-Year Analysis',
       category: 'Healthcare Policy',
       authors: ['Dr. Sarah Johnson', 'Prof. Michael Thompson', 'Dr. Raj Patel'],
       date: 'March 2024',
       downloads: 2847,
-      abstract: 'This comprehensive study examines the integration patterns of International Medical Graduates into the NHS workforce over five years, identifying key success factors, barriers, and policy recommendations for improving retention and satisfaction rates.'
+      abstract: 'This comprehensive study examines the integration patterns of international healthcare professionals into the NHS workforce over five years, identifying key success factors, barriers, and policy recommendations for improving retention and satisfaction rates.'
     },
     {
       id: 'ai-medical-education',
@@ -234,10 +235,10 @@ const Publications = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="cyan" asChild>
-                <a href="/collaborate">Join Early Access List</a>
+                <Link to="/collaborate">Join Early Access List</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="/contact">Contact Research Team</a>
+                <Link to="/contact">Contact Research Team</Link>
               </Button>
             </div>
           </motion.div>

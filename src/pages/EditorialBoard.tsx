@@ -11,7 +11,7 @@ const EditorialBoard = () => {
       role: "Editor-in-Chief",
       affiliation: "NHS England",
       orcid: "0000-0002-1825-0097",
-      expertise: ["Workforce Integration", "IMG Pathways", "Healthcare Policy"]
+      expertise: ["Workforce Integration", "Professional Development", "Healthcare Policy"]
     },
     {
       name: "Prof Michael Thompson",

@@ -8,12 +8,13 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
+    { name: "Home", href: "/" },
     { name: "Articles", href: "/articles" },
-    { name: "White Papers", href: "/white-papers" },
-    { name: "Protocols", href: "/protocols" },
     { name: "Reviews", href: "/reviews" },
-    { name: "Policy", href: "/policy" },
-    { name: "Research", href: "/research" },
+    { name: "Policy Papers", href: "/white-papers" },
+    { name: "Protocols", href: "/protocols" },
+    { name: "Conference", href: "/conference-papers" },
+    { name: "Data+Code", href: "/datasets" },
   ];
 
   return (
@@ -41,9 +42,20 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button variant="outline" size="sm" disabled className="opacity-60 hidden sm:flex" title="Coming Q2 2025">
-              Submit Manuscript
-            </Button>
+            <div className="relative hidden sm:flex items-center">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                disabled 
+                className="cursor-not-allowed opacity-50"
+                title="Coming Q2 2025"
+              >
+                Submit Manuscript
+              </Button>
+              <span className="absolute -top-2 -right-2 bg-gold text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
+                SOON
+              </span>
+            </div>
             <Button size="sm" className="bg-nx-cyan hover:bg-nx-cyan/90 text-white min-h-[44px]" asChild>
               <Link to="/collaborate">Join Early Access</Link>
             </Button>

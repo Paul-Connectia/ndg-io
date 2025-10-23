@@ -9,12 +9,13 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Research</h3>
             <div className="space-y-2 text-sm text-muted-foreground">
+              <Link to="/" className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Home</Link>
               <Link to="/articles" className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Articles</Link>
-              <Link to="/white-papers" className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">White Papers</Link>
-              <Link to="/protocols" className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Protocols</Link>
               <Link to="/reviews" className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Reviews</Link>
-              <Link to="/policy" className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Policy</Link>
-              <Link to="/datasets" className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Datasets</Link>
+              <Link to="/white-papers" className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Policy Papers</Link>
+              <Link to="/protocols" className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Protocols</Link>
+              <Link to="/conference-papers" className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Conference</Link>
+              <Link to="/datasets" className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Data+Code</Link>
             </div>
           </div>
 
@@ -46,7 +47,6 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">About</h3>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <Link to="/board" className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Editorial Board</Link>
               <a 
                 href="https://nextdocglobal.com" 
                 className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
@@ -132,9 +132,9 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground text-center mb-2">
             © 2025 NextDoc Global Ltd. All rights reserved. Registered office: 4 Queen's Road, Wimbledon, London- SW19 8ND.
           </p>
-          <p className="text-xs text-muted-foreground text-center">
-            Following COPE, ICMJE, and EQUATOR standards (CONSORT, STROBE, PRISMA, SQUIRE). 
-            ORCID required for corresponding authors. DOIs via Crossref; datasets via Zenodo.
+          <p className="text-xs text-muted-foreground text-center leading-relaxed">
+            All research follows COPE/ICMJE/EQUATOR standards. DOIs via Crossref. Datasets via Zenodo. 
+            ORCID required for authors. Open Access encouraged.
           </p>
         </div>
       </div>

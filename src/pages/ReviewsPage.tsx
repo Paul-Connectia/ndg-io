@@ -6,10 +6,10 @@ import { ContentType, Item } from "@/types/scholarly";
 import sampleItemsData from "@/data/sampleItems.json";
 
 const ReviewsPage = () => {
-  const [activeType, setActiveType] = useState<ContentType | 'all'>('review');
+  const [activeType, setActiveType] = useState<ContentType | 'all'>('systematic-review');
   const sampleItems = sampleItemsData as Item[];
 
-  const filteredItems = sampleItems.filter(item => item.type === 'review');
+  const filteredItems = sampleItems.filter(item => item.type === 'systematic-review');
 
   return (
     <Layout
@@ -25,7 +25,7 @@ const ReviewsPage = () => {
               Systematic Reviews & Meta-Analyses
             </h1>
             <p className="text-xl opacity-90">
-              PRISMA-compliant systematic reviews and meta-analyses synthesizing evidence on workforce integration, medical education, and healthcare policy. Includes full search strategies and risk-of-bias assessments.
+              Evidence synthesis following PRISMA standards, including systematic reviews and meta-analyses. Includes full search strategies and risk-of-bias assessments.
             </p>
           </div>
         </div>

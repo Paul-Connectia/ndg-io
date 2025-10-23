@@ -133,7 +133,7 @@ const Innovations = () => {
       icon: Globe,
       title: 'SponsorMatch™ (UK)',
       description: 'Find visa-sponsoring roles & Trusts',
-      fullDescription: 'SponsorMatch™ connects international medical graduates with visa-sponsoring opportunities across NHS Trusts. Real-time alerts and comprehensive Trust profiles included.',
+      fullDescription: 'SponsorMatch™ connects international healthcare professionals with visa-sponsoring opportunities across NHS Trusts. Real-time alerts and comprehensive Trust profiles included.',
       whyItMatters: [
         'Direct access to sponsoring Trust opportunities',
         'Real-time alerts for new visa sponsor roles',

@@ -9,11 +9,11 @@ interface TypeTabsProps {
 const TypeTabs = ({ activeType, onTypeChange }: TypeTabsProps) => {
   const tabs = [
     { value: 'all', label: 'All' },
-    { value: 'article', label: 'Articles' },
-    { value: 'white-paper', label: 'White Papers' },
+    { value: 'research-article', label: 'Articles' },
+    { value: 'systematic-review', label: 'Reviews' },
+    { value: 'white-paper', label: 'Policy Papers' },
     { value: 'protocol', label: 'Protocols' },
-    { value: 'review', label: 'Reviews' },
-    { value: 'policy', label: 'Policy' },
+    { value: 'conference-paper', label: 'Conference' },
     { value: 'dataset', label: 'Data+Code' }
   ] as const;
 
