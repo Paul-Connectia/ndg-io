@@ -5,7 +5,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, Microscope, Globe2, TrendingUp, Award, FileText, BookOpen, GraduationCap, Users } from 'lucide-react';
 import Layout from '@/components/Layout';
 import { Link } from 'react-router-dom';
-import TypeTabs from '@/components/scholarly/TypeTabs';
 import ItemCard from '@/components/scholarly/ItemCard';
 import { ContentType, Item } from '@/types/scholarly';
 import sampleItemsData from '@/data/sampleItems.json';
@@ -14,8 +13,8 @@ const LabsHome = () => {
   const [activeType, setActiveType] = useState<ContentType | 'all'>('all');
   const sampleItems = sampleItemsData as Item[];
 
-  const filteredItems = activeType === 'all' 
-    ? sampleItems 
+  const filteredItems = activeType === 'all'
+    ? sampleItems
     : sampleItems.filter(item => item.type === activeType);
 
   const displayedItems = filteredItems.slice(0, 4);
@@ -44,7 +43,7 @@ const LabsHome = () => {
   ];
 
   return (
-    <Layout 
+    <Layout
       title="NextDoc Labs - Evidence-Based Medical Research & White Papers"
       description="Practical evidence for NHS workforce, medical education, and health policy. COPE-compliant white papers and policy reviews from NextDoc Labs."
     >
@@ -106,7 +105,7 @@ const LabsHome = () => {
                   <p>
                     Every publication follows COPE/ICMJE standards and EQUATOR reporting guidelines—so you can cite our work with confidence, and apply our frameworks with clarity.
                   </p>
-                  
+
                   <div className="bg-slate-50 p-6 rounded-lg border-l-4 border-cyan">
                     <p className="font-semibold text-foreground mb-3">Focus areas:</p>
                     <ul className="space-y-2 text-base">
@@ -116,7 +115,7 @@ const LabsHome = () => {
                       <li>• Responsible AI in healthcare</li>
                     </ul>
                   </div>
-                  
+
                   <p className="font-semibold text-foreground pt-2">
                     Coming soon: author submissions, open peer review, and a reviewer registry.
                   </p>
@@ -143,11 +142,6 @@ const LabsHome = () => {
               Evidence-based research advancing NHS workforce, medical education, and responsible AI
             </p>
           </motion.div>
-
-          {/* Type Tabs */}
-          <div className="mb-8">
-            <TypeTabs activeType={activeType} onTypeChange={setActiveType} />
-          </div>
 
           {/* Item Grid */}
           <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -222,9 +216,9 @@ const LabsHome = () => {
             className="text-center"
           >
             <p className="text-base text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Every publication is reviewed for <strong className="text-foreground">COPE compliance</strong>, 
-              cited with <strong className="text-foreground">ICMJE standards</strong>, and structured using 
-              <strong className="text-foreground"> EQUATOR guidelines</strong> (CONSORT, STROBE, PRISMA). 
+              Every publication is reviewed for <strong className="text-foreground">COPE compliance</strong>,
+              cited with <strong className="text-foreground">ICMJE standards</strong>, and structured using
+              <strong className="text-foreground"> EQUATOR guidelines</strong> (CONSORT, STROBE, PRISMA).
               We reference NHS guidance, NICE, and BNF—so our frameworks integrate seamlessly into UK practice.
             </p>
           </motion.div>

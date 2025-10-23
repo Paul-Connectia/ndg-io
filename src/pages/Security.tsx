@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Section from "@/components/ui/section";
 import { Shield, Lock, Eye, Globe, Users, FileCheck, AlertTriangle, CheckCircle } from "lucide-react";
+import { ScrollRestoration } from "react-router-dom";
 
 const Security = () => {
   const securityPrinciples = [
@@ -122,7 +123,7 @@ const Security = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero Section */}
       <Section variant="gradient" className="text-white">
         <div className="max-w-4xl mx-auto text-center">
@@ -133,7 +134,7 @@ const Security = () => {
             Healthcare-grade security for AI-powered medical career services
           </p>
           <p className="text-lg text-white/80 max-w-3xl mx-auto">
-            Our security framework is designed specifically for healthcare applications, 
+            Our security framework is designed specifically for healthcare applications,
             ensuring the highest standards of data protection and regulatory compliance.
           </p>
         </div>
@@ -278,11 +279,10 @@ const Security = () => {
                   <CardDescription>{cert.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
-                    cert.status === "Certified" 
-                      ? "bg-green-100 text-green-800" 
+                  <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${cert.status === "Certified"
+                      ? "bg-green-100 text-green-800"
                       : "bg-yellow-100 text-yellow-800"
-                  }`}>
+                    }`}>
                     {cert.status}
                   </span>
                 </CardContent>
@@ -347,7 +347,7 @@ const Security = () => {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Security & Privacy Contacts</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            For security concerns, privacy questions, or compliance inquiries, 
+            For security concerns, privacy questions, or compliance inquiries,
             please reach out to our dedicated teams.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -361,10 +361,10 @@ const Security = () => {
               <a href="mailto:labs@nextdocglobal.io?subject=Compliance%20Inquiry">Compliance Team</a>
             </Button>
           </div>
-          
+
           <div className="mt-8 p-4 bg-primary-muted rounded-lg">
             <p className="text-sm text-primary">
-              <strong>Security Bug Bounty:</strong> Report security vulnerabilities responsibly via 
+              <strong>Security Bug Bounty:</strong> Report security vulnerabilities responsibly via
               <a href="mailto:labs@nextdocglobal.io?subject=Security%20Bug%20Report" className="underline ml-1">labs@nextdocglobal.io</a>
             </p>
           </div>
@@ -372,6 +372,7 @@ const Security = () => {
       </Section>
 
       <Footer />
+      <ScrollRestoration />
     </div>
   );
 };

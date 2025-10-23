@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
-import TypeTabs from "@/components/scholarly/TypeTabs";
 import ItemCard from "@/components/scholarly/ItemCard";
 import { ContentType, Item } from "@/types/scholarly";
 import sampleItemsData from "@/data/sampleItems.json";
@@ -28,13 +27,6 @@ const ArticlesPage = () => {
               Original research, case studies, and empirical investigations in medical education. All articles follow EQUATOR reporting standards (CONSORT, STROBE, SQUIRE).
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* Type Tabs */}
-      <section className="border-b bg-background/95 backdrop-blur sticky top-16 z-40">
-        <div className="container mx-auto px-4 py-4 max-w-7xl">
-          <TypeTabs activeType={activeType} onTypeChange={setActiveType} />
         </div>
       </section>
 

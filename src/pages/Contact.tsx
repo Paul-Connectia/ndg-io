@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Section from "@/components/ui/section";
 import { Mail, MapPin, Phone, Globe, Users, Briefcase } from "lucide-react";
+import { ScrollRestoration } from "react-router-dom";
 
 const Contact = () => {
   const contactMethods = [
@@ -263,6 +264,7 @@ const Contact = () => {
       </Section>
 
       <Footer />
+      <ScrollRestoration />
     </div>
   );
 };
