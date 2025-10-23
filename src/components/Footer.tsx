@@ -47,8 +47,8 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">About</h3>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <a 
-                href="https://nextdocglobal.com" 
+              <a
+                href="https://nextdocglobal.com"
                 className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -64,7 +64,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Connect</h3>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <a 
+              <a
                 href="https://researchgate.net"
                 className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
                 target="_blank"
@@ -72,7 +72,7 @@ const Footer = () => {
               >
                 ResearchGate
               </a>
-              <a 
+              <a
                 href="https://linkedin.com"
                 className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
                 target="_blank"
@@ -80,7 +80,7 @@ const Footer = () => {
               >
                 LinkedIn
               </a>
-              <a 
+              <a
                 href="mailto:labs@nextdocglobal.io"
                 className="block hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
               >
@@ -94,16 +94,16 @@ const Footer = () => {
         <div className="border-t border-border pt-8 mt-8">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
-              <a 
-                href="https://nextdocglobal.com" 
+              <a
+                href="https://nextdocglobal.com"
                 className="hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 NextDoc Global
               </a>
-              <a 
-                href="https://nextdoc.co.uk" 
+              <a
+                href="https://www.nextdocuk.com/"
                 className="hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -114,7 +114,7 @@ const Footer = () => {
             <div className="flex gap-6 text-sm text-muted-foreground">
               <Link to="/terms" className="hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Terms</Link>
               <Link to="/privacy" className="hover:text-cyan transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Privacy</Link>
-              <button 
+              <button
                 onClick={() => {
                   const event = new CustomEvent('manage-cookies');
                   window.dispatchEvent(event);
@@ -133,7 +133,7 @@ const Footer = () => {
             © 2025 NextDoc Global Ltd. All rights reserved. Registered office: 4 Queen's Road, Wimbledon, London- SW19 8ND.
           </p>
           <p className="text-xs text-muted-foreground text-center leading-relaxed">
-            All research follows COPE/ICMJE/EQUATOR standards. DOIs via Crossref. Datasets via Zenodo. 
+            All research follows COPE/ICMJE/EQUATOR standards. DOIs via Crossref. Datasets via Zenodo.
             ORCID required for authors. Open Access encouraged.
           </p>
         </div>
