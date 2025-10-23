@@ -19,7 +19,7 @@ const Contact = () => {
     },
     {
       title: "Partnership Opportunities",
-      email: "labs@nextdocglobal.io?subject=Partnership%20Opportunity", 
+      email: "labs@nextdocglobal.io?subject=Partnership%20Opportunity",
       description: "Collaboration with hospitals, universities, regulators, and accreditation bodies",
       icon: <Users className="h-6 w-6" />
     },
@@ -45,9 +45,9 @@ const Contact = () => {
       icon: <MapPin className="h-5 w-5" />
     },
     {
-      location: "Mumbai, India", 
-      address: "Medical AI Development Hub\nMumbai, Maharashtra, India",
-      focus: "Indian market products and regional compliance",
+      location: "Bangalore, India",
+      address: "Medical AI Development Hub\nBangalore, Karnataka, India",
+      focus: "India operations and regional compliance",
       icon: <MapPin className="h-5 w-5" />
     }
   ];
@@ -55,7 +55,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero Section */}
       <Section variant="gradient" className="text-white">
         <div className="max-w-4xl mx-auto text-center">
@@ -66,7 +66,7 @@ const Contact = () => {
             Let's discuss how AI can transform medical careers
           </p>
           <p className="text-lg text-white/80 max-w-3xl mx-auto">
-            Whether you're interested in our products, research collaboration, or enterprise solutions, 
+            Whether you're interested in our products, research collaboration, or enterprise solutions,
             we'd love to hear from you.
           </p>
         </div>
@@ -91,7 +91,7 @@ const Contact = () => {
                 <CardContent>
                   <Button variant="outline" className="w-full" asChild>
                     <a href={`mailto:${method.email}`}>
-                      Email {method.email}
+                      Send Email
                     </a>
                   </Button>
                 </CardContent>
@@ -154,15 +154,15 @@ const Contact = () => {
 
                 <div>
                   <Label htmlFor="message">Message</Label>
-                  <Textarea 
-                    id="message" 
+                  <Textarea
+                    id="message"
                     placeholder="Tell us about your needs, questions, or how we can help..."
                     rows={5}
                   />
                 </div>
 
                 <Button type="submit" className="w-full" size="lg">
-                  Send Message
+                  Send Email
                 </Button>
               </form>
             </CardContent>

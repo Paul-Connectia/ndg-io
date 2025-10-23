@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, ScrollRestoration } from "react-router-dom";
 import LabsHome from "./pages/LabsHome";
 import Products from "./pages/Products";
 import SmartQBank from "./pages/SmartQBank";
@@ -40,6 +40,34 @@ const queryClient = new QueryClient({
   },
 });
 
+const router = createBrowserRouter([
+  { path: "/", index: true, element: <LabsHome /> },
+  { path: "/products", element: <Products /> },
+  { path: "/products/smartqbank", element: <SmartQBank /> },
+  { path: "/products/masterypacks", element: <MasteryPacks /> },
+  { path: "/products/tutorai", element: <TutorAI /> },
+  { path: "/products/casesim", element: <CaseSim /> },
+  { path: "/research", element: <Research /> },
+  { path: "/innovations", element: <Innovations /> },
+  { path: "/publications", element: <Publications /> },
+  { path: "/collaborate", element: <Collaborate /> },
+  { path: "/cases", element: <Cases /> },
+  { path: "/docs", element: <Docs /> },
+  { path: "/security", element: <Security /> },
+  { path: "/contact", element: <Contact /> },
+  { path: "/articles", element: <ArticlesPage /> },
+  { path: "/white-papers", element: <WhitePapersPage /> },
+  { path: "/protocols", element: <ProtocolsPage /> },
+  { path: "/reviews", element: <ReviewsPage /> },
+  { path: "/policy", element: <PolicyPage /> },
+  { path: "/datasets", element: <DatasetsPage /> },
+  { path: "/conference-papers", element: <ConferencePapersPage /> },
+  { path: "/policies", element: <PoliciesHub /> },
+  { path: "/terms", element: <Terms /> },
+  { path: "/privacy", element: <Privacy /> },
+  { path: "*", element: <NotFound /> },
+]);
+
 const App = () => {
   return (
     <StrictMode>
@@ -47,35 +75,7 @@ const App = () => {
         <TooltipProvider>
           <Toaster />
           <Sonner />
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<LabsHome />} />
-              <Route path="/products" element={<Products />} />
-              <Route path="/products/smartqbank" element={<SmartQBank />} />
-              <Route path="/products/masterypacks" element={<MasteryPacks />} />
-              <Route path="/products/tutorai" element={<TutorAI />} />
-              <Route path="/products/casesim" element={<CaseSim />} />
-              <Route path="/research" element={<Research />} />
-              <Route path="/innovations" element={<Innovations />} />
-              <Route path="/publications" element={<Publications />} />
-              <Route path="/collaborate" element={<Collaborate />} />
-              <Route path="/cases" element={<Cases />} />
-              <Route path="/docs" element={<Docs />} />
-              <Route path="/security" element={<Security />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/articles" element={<ArticlesPage />} />
-              <Route path="/white-papers" element={<WhitePapersPage />} />
-              <Route path="/protocols" element={<ProtocolsPage />} />
-              <Route path="/reviews" element={<ReviewsPage />} />
-              <Route path="/policy" element={<PolicyPage />} />
-              <Route path="/datasets" element={<DatasetsPage />} />
-              <Route path="/conference-papers" element={<ConferencePapersPage />} />
-              <Route path="/policies" element={<PoliciesHub />} />
-              <Route path="/terms" element={<Terms />} />
-              <Route path="/privacy" element={<Privacy />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
+          <RouterProvider router={router} />
         </TooltipProvider>
       </QueryClientProvider>
     </StrictMode>
